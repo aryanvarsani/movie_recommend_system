@@ -6,14 +6,13 @@ from pydantic import BaseModel
 import requests
 from sklearn.metrics.pairwise import cosine_similarity
 from fastapi.middleware.cors import CORSMiddleware
-from flask_cors import CORS
+
 
 origins = [
     "http://localhost:5173",  # Vite dev server
 ]
 
 app= FastAPI()
-CORS(app)
 
 app.add_middleware(
     CORSMiddleware,
