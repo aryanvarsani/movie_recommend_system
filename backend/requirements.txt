@@ -1,0 +1,8 @@
+uvicorn
+pandas
+numpy
+scikit-learn
+requests
+python-multipart
+pydantic
+flask-cors
