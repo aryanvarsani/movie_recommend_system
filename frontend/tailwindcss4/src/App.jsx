@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     const get_movies_names = async () => {
-      const response = await fetch('http://localhost:8000/get_movies_names');
+      const response = await fetch('https://movie-recommend-system-1-fuz5.onrender.com/get_movies_names');
       const data = await response.json();
 
       const options = data['movies'].map(movie => ({ value: movie, label: movie }));
@@ -28,7 +28,7 @@ function App() {
     
 
     setLoading(true);
-    const response = await fetch('http://localhost:8000/recommend', {
+    const response = await fetch('https://movie-recommend-system-1-fuz5.onrender.com/recommend', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
