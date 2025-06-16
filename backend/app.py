@@ -24,7 +24,6 @@ app.add_middleware(
 
 distance_similarity = pickle.load(open('distance_similarity.pkl','rb'))
 new_movies=pickle.load(open('movie_list.pkl','rb'))
-x=pickle.load(open('x.pkl','rb'))
 
 class MovieRequest(BaseModel):
     title: str
