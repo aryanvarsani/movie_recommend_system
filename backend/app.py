@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 
 origins = [
-    "http://localhost:5173",  # Vite dev server
+    "https://movie-recommend-system-frontend.onrender.com",  # Vite dev server
 ]
 
 app= FastAPI()
